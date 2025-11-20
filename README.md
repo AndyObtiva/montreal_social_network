@@ -3,6 +3,8 @@
 
 Montreal Social Network is a Ruby on Rails Hotwire/Turbo web app built during the [Montreal.rb Nov 2025 Hacknight](https://www.meetup.com/montrealrb/events/311445998/).
 
+It has partial progress that will be continued in Hacknight Part 2 on December, 17, 2025.
+
 ## Event Description
 
 Hacknight: Build a Social Network with Rails Hotwire/Turbo [2h]
@@ -11,12 +13,12 @@ Learn Rails Hotwire/Turbo by building a very basic social network web app (simil
 
 ### Use Cases:
 
-- Register as a user (could use Devise or just email session login without needing a password)
-- Login as a user (could use Devise or just email session login without needing a password)
-- See my feed (start as a simple webpage, and then incrementally enhance with Turbo Frames and Turbo Streams)
-- Post a message on my feed
-- See listing of users (start as a simple webpage, and then incrementally enhance with Turbo Frames and Turbo Streams)
-- See a user's feed (start as a simple webpage, and then incrementally enhance with Turbo Frames and Turbo Streams)
+- [DONE] Register as a user (could use Devise or just email session login without needing a password)
+- [DONE] Login as a user (could use Devise or just email session login without needing a password)
+- [DONE MINUS TURBO STREAMS] See my feed (start as a simple webpage, and then incrementally enhance with Turbo Frames and Turbo Streams)
+- [DONE] Post a message on my feed
+- [DONE MINUS TURBO FRAMES & TURBO STREAMS] See listing of users (start as a simple webpage, and then incrementally enhance with Turbo Frames and Turbo Streams)
+- [DONE MINUS TURBO STREAMS] See a user's feed (start as a simple webpage, and then incrementally enhance with Turbo Frames and Turbo Streams)
 - Follow a user
 - See my following's feed (includes latest messages by all users I follow; start as a simple webpage, and then incrementally enhance with Turbo Frames and Turbo Streams)
 
