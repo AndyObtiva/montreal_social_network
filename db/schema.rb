@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2025_11_20_003211) do
+ActiveRecord::Schema[8.1].define(version: 2025_11_20_004719) do
   create_table "feeds", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.integer "feed_id"
+    t.text "text"
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
