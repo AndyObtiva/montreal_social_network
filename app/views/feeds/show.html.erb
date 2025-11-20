@@ -1,14 +1,19 @@
 <%= render @feed %>
 
 <turbo-frame id="feed_posts">
-  <ul>
-    <% @feed.posts.each do |post| %>
-      <li><%= post.text %></li>
-    <% end %>
-  </ul>
+  <% if @feed.posts.any? %>
+    <ul>
+      <% @feed.posts.each do |post| %>
+        <li><%= post.text %></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>No posts</p>
+  <% end %>
+  
   <%= render 'posts/form', feed: @feed %>
 </turbo-frame>
-
+<br>
 <div>
-  <%#= link_to "Edit this feed", edit_feed_path(@feed) %>
+  <%= link_to "User Feeds", users_path %>
 </div>
