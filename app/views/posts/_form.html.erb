@@ -11,13 +11,10 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :feed_id, style: "display: block" %>
-    <%= form.number_field :feed_id %>
-  </div>
+  <%= form.hidden_field :feed_id, value: current_user.feed.id %>
 
   <div>
-    <%= form.label :text, style: "display: block" %>
+    <%= form.label :post, style: "display: block" %>
     <%= form.textarea :text %>
   </div>
 

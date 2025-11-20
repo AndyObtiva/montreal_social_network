@@ -1,7 +1,11 @@
 <div id="<%= dom_id feed %>">
   <div>
     <strong>User:</strong>
-    <%= feed.user_id %>
+    <%= feed.user.email %>
   </div>
-
+  <ul>
+    <% feed.posts.each do |post| %>
+      <li><%= post.text %></li>
+    <% end %>
+  </ul>
 </div>

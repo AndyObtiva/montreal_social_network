@@ -2,6 +2,8 @@
 
 <%= render @feed %>
 
+<%= render 'posts/form' %>
+
 <div>
   <%= link_to "Edit this feed", edit_feed_path(@feed) %> |
   <%= link_to "Back to feeds", feeds_path %>
