@@ -31,3 +31,9 @@ Learn Rails Hotwire/Turbo by building a very basic social network web app (simil
 ## Demo
 
 ![montreal social network](/montreal_social_network_demo.gif)
+
+## License
+
+[MIT](LICENSE.txt)
+
+Copyright (c) 2025 Andy Maleh
