@@ -26,7 +26,12 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <section id="aside" style="float: right;">
+      <%= render 'feeds/feed_posts', feed_title: "My Following's Feed", feed_posts: current_user.feed.followed_posts %>
+    </section>
+    <section id="main">
+      <%= yield %>
+    </section>
     <br>
     <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete } %>
   </body>

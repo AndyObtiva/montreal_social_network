@@ -1,11 +1,9 @@
 <%= render @feed %>
 
 <turbo-frame id="feed_posts">
-  <%= render 'feed_posts', feed_posts: @feed.posts %>
+  <%= render 'feed_posts', feed_title: 'My Feed', feed_posts: @feed.posts %>
   <%= render 'posts/form', feed: @feed %>
 </turbo-frame>
-<br>
-<%= render 'feed_posts', feed_posts: @feed.followed_posts %>
 <br>
 <div>
   <%= link_to "User Feeds", users_path %>

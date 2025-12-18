@@ -19,8 +19,8 @@ Learn Rails Hotwire/Turbo by building a very basic social network web app (simil
 - [DONE] Post a message on my feed
 - [DONE MINUS TURBO FRAMES & TURBO STREAMS] See listing of users (start as a simple webpage, and then incrementally enhance with Turbo Frames and Turbo Streams)
 - [DONE MINUS TURBO STREAMS] See a user's feed (start as a simple webpage, and then incrementally enhance with Turbo Frames and Turbo Streams)
-- Follow a user
-- See my following's feed (includes latest messages by all users I follow; start as a simple webpage, and then incrementally enhance with Turbo Frames and Turbo Streams)
+- [DONE MINUS TURBO FRAMES & TURBO STREAMS] Follow a user
+- [DONE MINUS TURBO FRAMES & TURBO STREAMS] See my following's feed (includes latest messages by all users I follow; start as a simple webpage, and then incrementally enhance with Turbo Frames and Turbo Streams)
 
 ### Website Structure:
 
