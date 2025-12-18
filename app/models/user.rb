@@ -17,4 +17,8 @@ class User < ApplicationRecord
   def follow(other_user)
     followed << other_user unless followed.include?(other_user)
   end
+  
+  def follow_for_followed_user(other_user)
+    my_follows.where(followed_user_id: other_user.id).first
+  end
 end

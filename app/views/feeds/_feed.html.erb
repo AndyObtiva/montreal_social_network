@@ -3,4 +3,21 @@
     <strong>User:</strong>
     <%= feed.user.email %>
   </div>
+  <div>
+    <% if current_user != feed.user %>
+      <% if current_user.followed.include?(feed.user) %>
+        <% follow = current_user.follow_for_followed_user(feed.user) %>
+        <%= form_for follow, method: :delete, url: follow_path(follow) do |f| %>
+          <%= f.hidden_field :_method, value: :delete %>
+          <%= f.submit 'Unfollow' %>
+        <% end %>
+      <% else %>
+        <%= form_for Follow.new do |f| %>
+          <%= f.hidden_field :follower_user_id, value: current_user.id %>
+          <%= f.hidden_field :followed_user_id, value: feed.user.id %>
+          <%= f.submit 'Follow' %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
 </div>
